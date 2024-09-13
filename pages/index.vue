@@ -323,6 +323,10 @@ import { listDataStatus } from "@/constants/data";
 
 const listDataStore = useMyDataStore();
 
+definePageMeta({
+  middleware: "auth",
+});
+
 onMounted(() => {
   loadItems({
     page: 1,

@@ -1,19 +1,5 @@
 <template>
   <v-navigation-drawer floating :rail="!isRail" :permanent="isRail">
-    <div
-      :class="{
-        'd-flex justify-center py-3 px-6': isRail,
-        'd-flex justify-center py-2': !isRail,
-      }"
-    >
-      <v-img
-        contain
-        src="https://cdn.techinasia.com/data/images/07347fd66ebd150c3f2eb10bf11c9f35.png"
-        v-if="isRail"
-      />
-      <v-img contain src="@/assets/images/logo-square.png" v-else />
-    </div>
-
     <v-list class="my-2">
       <v-list-item
         base-color="blue-grey-darken-4"
